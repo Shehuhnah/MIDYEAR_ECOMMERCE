@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #AF8F6F;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2%;
+            color: #000000;
+            width: 100%;
+            max-width: 1200px;
+            box-sizing: border-box;
+        }
+
+        .lang {
+            margin-bottom: 20px;
+            width: 40%;
+            height: 40%;
+            font-family: "Merriweather", serif;
+        }
+
+        .lang img {
+            width: 100%; 
+            max-width: 700px; 
+            height: auto; 
+            margin: 20px auto; 
+            display: block; 
+        }
+
+        .Excited {
+            margin-top: 10px; 
+            padding: 0 10px;
+        }
+
+        .button-container {
+            margin-top: 20px; 
+        }
+
+        .btn-custom {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 10px;
+            background-color: #543310;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #74512d; 
+        }
+
+        .social-icons {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .social-icons h2 {
+            margin-bottom: 10px;
+        }
+
+        .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 40px;
+            height: 40px;
+            text-decoration: none;
+            margin: 5px;
+            border-radius: 50%;
+            display: inline-block;
+            color: #000000;
+        }
+
+       
+        @media (max-width: 768px) {
+            .btn-custom {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+
+            .lang img {
+                max-width: 90%;
+            }
+
+            .fa {
+                font-size: 25px;
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                padding: 1%;
+            }
+
+            .Excited h2 {
+                font-size: 1.2rem;
+            }
+
+            .btn-custom {
+                font-size: 0.8rem;
+                padding: 8px 12px;
+            }
+
+            .fa {
+                font-size: 20px; 
+                width: 30px;
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <div class="lang">
+        <i><h1 style="text-align: center;">Thank you for purchasing!</h1></i>
+        <img src="envelope.png" alt="Thank You Image">
+    </div>
+
+    <div class="Excited" style="font-family: Merriweather", serif;>
+        <h2>We’re excited to be a part of your beauty journey.</h2>
+        <h2>Your order is confirmed and will be processed shortly.</h2>
+        <div class="button-container">
+            <a href="homepage.php"><button class="btn-custom" >Back Home</button></a>
+        </div>
+    </div>
+</div>
+
+<div class="social-icons">
+    <p>If you didn't receive any mail, contact us! <a href="mailto:naurscosmetics@gmail.com" style="color: #2C1A11; font-weight: 600;"></a></p>
+    <a href="facebook" target="_blank" class="mx-4"><i class="fab fa-facebook-f" style="font-size:25px;color:#000000;"></i></a>
+    <a href="instagram" target="_blank" class="mx-4"><i class="fab fa-instagram" style="font-size:25px;color:#000000;"></i></a>
+    <a href="mailto:info@naurs.com" class="mx-4"><i class="fas fa-envelope" style="font-size:25px;color:#000000;"></i></a>
+    <a href="tel:0952-497-8316" class="mx-4"><i class="fas fa-phone" style="font-size:25px;color:#000000;"></i></a>
+</div>
+
+</body>
+</html>

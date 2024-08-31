@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0; 
+    height: 100vh;
+    overflow: hidden; 
+    position: relative;
+    background-image: url(cover.jpg);
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(images/test.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1; 
+}
+/* log in section */
+.box-area {
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    background-color: #6F4E37;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#lboximg{
+    width: 700px;
+}
+.left-box{
+    background-color: #74512D;
+}
+.right-box{
+    background-color: #AF8F6F;
+    padding: 40px 40px 40px 40px;
+    color: #543310;
+}
+
+
+::placeholder{
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 1140px){
+    .box-area{
+        margin: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .box-area{
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .box-area{
+        margin: 0 10px;
+    }
+    .left-box{
+        height: 50px;
+        overflow: hidden;
+    }
+    .right-box{
+        padding: 20px;
+    }
+   
+}
+
+@media only screen and (max-width: 576px){
+    .box-area{
+        margin: 0 20px;
+    }
+    .left-box{
+        height: 50px;
+        overflow: hidden;
+    }
+}
